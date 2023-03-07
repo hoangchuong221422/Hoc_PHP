@@ -10,7 +10,8 @@
     <form action="Dang_Ky.php" method="GET">
         Họ tên: <input type="text" name="txtten" value=""> <br/>
         Tuổi: <input type="text" name="txttuoi" value=""> <br/>
-        <input type="submit" name="btnsubmit" value="Đăng ký">
+        <input type="submit" name="btndangky" value="Đăng ký">
+        <input type="submit" name="btntieptuc" value="Tiếp tục">
     </form>
 </body>
 </html>
