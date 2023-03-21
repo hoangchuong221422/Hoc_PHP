@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .td {
+            color: green;
+        }
+
+        .boxB {
+            background-color: yellow;
+            width: 300px;
+            height: 200px;
+            font-size: 20px;
+            color: red;
+        }
+
+        .boxC {
+            background-color: yellow;
+            width: 400px;
+            height: 200px;
+            font-size: 20px;
+            color: gray;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Minh họa sử dụng sử dụng hàm appendTo của jquery</h1>
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+        crossorigin="anonymous"></script> -->
+    <script src="././jquery-3.6.4.min.js"></script>
+
+    <h1 id="t1" class="td">Tiêu đề 1</h1>
+    <h1 id="t2" class="td">Tiêu đề 2</h1>
+    <h1 id="t3" class="boxA">Tiêu đề 3</h1>
+    <div id="box1" class="boxA">khối thứ nhất</div>
+    <div id="box2" class="boxA">khối thứ hai</div>
+    <div class="boxB boxC" id="kq">.......</div>
+    <script>
+        $(document).ready(function () {
+            var para = "<p>Hello</p>";
+            $(para).appendTo("#kq");
+            // $("#box1").removeClass("boxB");
+            // $("#box2").addClass("boxB boxC");
+        });
+    </script>
+</body>
+
+</html>

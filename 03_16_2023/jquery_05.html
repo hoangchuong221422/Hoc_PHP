@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h1>Minh họa sử dụng sử dụng hàm attr của jquery</h1>
+
+    <img src="./images/php.png"></img>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+        crossorigin="anonymous"></script> -->
+    <script src="././jquery-3.6.4.min.js"></script>
+
+    <!-- <h1 id="t1" class="td">Tiêu đề 1</h1>
+    <h1 id="t2" class="td">Tiêu đề 2</h1>
+    <h1 id="t3" class="boxA">Tiêu đề 3</h1>
+    <div id="box1" class="boxA">khối thứ nhất</div>
+    <div id="box2" class="boxA">khối thứ hai</div> -->
+    <script>
+        $(document).ready(function () {
+            $("img").click(function () {
+                var duongDan = $("img").attr("src");
+                if (duongDan == "./images/php.png") {
+                    $(this).attr("src", "./images/html.jpg");
+                } else {
+                    $(this).attr("src", "./images/php.png");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
