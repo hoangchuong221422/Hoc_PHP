@@ -1,41 +1,60 @@
-html, body {
-    font-family: 'Work Sans', sans-serif;
+html,
+body {
+  font-family: 'Work Sans', sans-serif;
 }
 
 .header__top {
-    background-color: #ff4f81;
-    font-size: 14px;
+  background-color: #ff4f81;
+  font-size: 14px;
 }
 
-.header__top a{
-    color: white;
-
+.header__top a {
+  color: white;
 }
 
-
-.header__top a{
-    color: white;
-    transition: all 0.5s;
-
+.header__top a {
+  color: white;
+  transition: all 0.5s;
 }
 
 .header__left a:hover {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
-.header__right a{
-    width: 30px;
-    height: 30px;
-    background-color: black;
-    border: 1px solid black;
-    display: inline-block;
-    text-align: center;
-    line-height: 30px;
-    margin-left: 0.25rem;
+.header__right a {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border: 1px solid black;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  margin-left: 0.7rem;
+  /* margin: 0.4rem 0 0.4rem 1rem; */
 }
 
 .header__right a:hover {
-    background-color: #ff4f81;
-    border-color: white;
+  background-color: #ff4f81;
+  border-color: white;
+}
+
+.navInstruction a {
+  color: black;
+}
+
+.navInstruction .navbar-brand p:first-child i {
+  transform: skewX(-10deg);
+}
+
+.navInstruction .navbar-brand p:first-child {
+  font-size: 36px;
+  color: black;
+}
+
+.navInstruction .navbar-brand p:last-child {
+  font-size: 11px;
+  color: #ff4f81;
+  letter-spacing: 3px;
+  font-weight: bold;
 }
