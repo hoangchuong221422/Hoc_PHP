@@ -1,0 +1,41 @@
+html, body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.header__top {
+    background-color: #ff4f81;
+    font-size: 14px;
+}
+
+.header__top a{
+    color: white;
+
+}
+
+
+.header__top a{
+    color: white;
+    transition: all 0.5s;
+
+}
+
+.header__left a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.header__right a{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border: 1px solid black;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 0.25rem;
+}
+
+.header__right a:hover {
+    background-color: #ff4f81;
+    border-color: white;
+}
