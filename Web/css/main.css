@@ -58,3 +58,96 @@ body {
   letter-spacing: 3px;
   font-weight: bold;
 }
+
+#navbarInstruction .nav-item{
+  margin: 0 15px;
+}
+
+#navbarInstruction .nav-item::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #ff4f81;
+  display: block;
+  transition: all 0.5s;
+}
+
+#navbarInstruction .nav-item:hover::after{
+    width: 100%;
+}
+
+#navbarInstruction .nav-link{
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.5s;
+}
+
+#navbarInstruction .nav-item:hover .nav-link{
+  color: #ff4f81;
+}
+
+#navbarInstruction .nav-item.active .nav-link{
+  color: #ff4f81;
+}
+
+#navbarInstruction .nav-item.active::after {
+  width: 100%;
+}
+
+#navbarInstruction .dropdown-menu{
+  background-color:rgba(0, 0, 0, 0.6) ;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+#navbarInstruction .dropdown-item{
+  color: white;
+  transition: all 0.5s;
+}
+
+#navbarInstruction .dropdown-item:focus,#navbarInstruction .dropdown-item:hover{
+  background-color: transparent;
+  color: #ff4f81;
+}
+
+
+/* CAROUSEL */
+
+#carouselCyber .carousel-caption {
+  /* chỉ áp dụng với thẻ có position: absolute; */
+  top:55%;
+  left: 50%;
+
+  transform: translate(-50%,-50%);
+}
+
+#carouselCyber .carousel-caption h1{
+  font-size: 52px;
+}
+
+#carouselCyber .carousel-caption p{
+  letter-spacing: 4px;
+  line-height: 1.8rem;
+
+  width: 70%;
+  margin: 0 auto;
+
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+
+#carouselCyber .carousel-caption button{
+  padding: 11px 20px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 0;
+  letter-spacing: 2px;
+  font-size: 14px;
+  transition: all 0.5s;
+}
+
+#carouselCyber .carousel-caption button:hover{
+  background-color: #ff4f81;
+  border-color: #ff4f81;
+}
+
