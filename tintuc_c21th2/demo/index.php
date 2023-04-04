@@ -32,9 +32,9 @@
 
 	<?php 
 		include_once("function.php");	
-		include_once("pages/nav.php");	
-		include_once("pages/content.php");	
-		include_once("pages/footer.php");	
+		include_once("nav.php");	
+		include_once("content.php");	
+		include_once("footer.php");	
 	?>
    
 

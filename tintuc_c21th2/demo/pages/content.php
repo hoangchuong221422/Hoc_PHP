@@ -95,10 +95,9 @@
                      <!-- item -->
                      <?php
                     $kq = Get_TheoLoai();
-                    while ($row = mysqli_fetch_assoc( $kq)) {
+                    while ($row = mysqli_fetch_assoc($kq)) {
                         $kq1 = GetLoaiTin_Theo_TheLoai($row["id"]);
-                        if(mysqli_num_rows($kq1) > 0){
-                            $row33 = Get_Tin_Noi_Bat_TheoTL($row["id"]);
+                        if(mysqli_num_rows($kq1) > 0){                          
                         
                     ?>
                      <div class="row-item row">
@@ -113,12 +112,16 @@
                                   }
                              ?>
                          </h3>                                    
-                                    
+                         <?php
+                            $row3 = Get_Tin_Noi_Bat_TheoTL($row["id"]);
+                            $kq2 = mysqli_fetch_assoc($row3);
+
+
+                            ?>
                          <div class="col-md-12 border-right">
                              <div class="col-md-3">
-                                 <a href="chitiet.html">
-                                 <?php echo $row33 ?>
-                                     <img class="img-responsive" src="tintuc">
+                                 <a href="chitiet.html">                                
+                                     <img class="img-responsive" src="img/tintuc/<?php echo $kq2["Hinh"] ?>">
                                  </a>
                              </div>
 
@@ -135,7 +138,7 @@
                      </div>
                      <?php
                         }}
-                             ?>
+                     ?>
                      <!-- end item -->
                      <!-- item -->
 
