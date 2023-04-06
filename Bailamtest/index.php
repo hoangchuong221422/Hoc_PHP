@@ -16,7 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/shop-homepage.css" rel="stylesheet">
-    
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,12 +28,12 @@
 </head>
 
 <body>
-	<?php
-		include_once("function.php");
-		include_once("nav.php");
-		include_once("content.php");
-		include_once("footer.php");
-	?>
+    <?php
+    include_once("function.php");
+    include_once("nav.php");
+    include_once("content.php");
+    include_once("footer.php");
+    ?>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
