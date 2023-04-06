@@ -9,8 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title> Khoa Pham</title>
-<link href="css/my.css" rel="stylesheet">
+    <title> Trang tin tức</title>
+    <link href="css/my.css" rel="stylesheet">
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 

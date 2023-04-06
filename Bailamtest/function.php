@@ -42,4 +42,13 @@
         $kq=mysqli_query($conn,$sql);
         return $kq;
     }
+
+
+    function Get_Tin_Theo_Trang($idLT,$from,$soTrangTin){
+        $conn=connect();
+        $sql="SELECT * FROM tintuc WHERE idLoaiTin = $idLT LIMIT $from,$soTrangTin";
+        $kq=mysqli_query($conn,$sql);
+        disconnect($conn);
+        return $kq;
+    }
 ?>
