@@ -10,12 +10,13 @@
     <meta name="author" content="">
 
     <title> Trang tin tức</title>
-    <link href="css/my.css" rel="stylesheet">
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/shop-homepage.css" rel="stylesheet">
+    <!-- CSS -->
+    <link href="css/my.css" rel="stylesheet">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

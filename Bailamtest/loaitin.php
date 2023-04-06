@@ -30,7 +30,7 @@ $kqTin = Get_Tin_Theo_Trang($idTL, $from, $soTrangTin); // hàm này sẽ trả 
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title> Khoa Pham</title>
+    <title> Trang tin</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -90,7 +90,7 @@ $kqTin = Get_Tin_Theo_Trang($idTL, $from, $soTrangTin); // hàm này sẽ trả 
                                 <p>
                                     <?php echo $row["TomTat"]; ?>
                                 </p>
-                                <a class="btn btn-primary" href="detail.html">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                                <a class="btn btn-primary" href="detail.html">Xem thêm <span class="glyphicon glyphicon-chevron-right"></span></a>
                             </div>
 
                             <div class="break"></div>
