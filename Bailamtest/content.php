@@ -79,7 +79,7 @@
                                 ?>
                                 <div class="col-md-12 border-right">
                                     <div class="col-md-3">
-                                        <a href="chitiet.html">
+                                        <a href="chitiet.php?id=<?php echo $tt["id"] ?>">
                                             <img class="img-responsive" src="hinhanh/tintuc/<?php echo $tt["Hinh"]; ?>" alt="">
                                         </a>
                                     </div>
@@ -87,7 +87,7 @@
                                     <div class="col-md-9">
                                         <h3><?php echo $tt["TieuDe"]; ?></h3>
                                         <p><?php echo $tt["TomTat"]; ?></p>
-                                        <a class="btn btn-primary" href="chitiet.html">Xem them <span class="glyphicon glyphicon-chevron-right"></span></a>
+                                        <a class="btn btn-primary" href="chitiet.php?id=<?php echo $tt["id"] ?>">Xem them <span class="glyphicon glyphicon-chevron-right"></span></a>
                                     </div>
 
                                 </div>

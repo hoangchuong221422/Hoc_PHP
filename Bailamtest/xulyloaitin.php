@@ -22,33 +22,33 @@ $kqTin = Get_Tin_Theo_Trang($idTL, $from, $soTrangTin); // hàm này sẽ trả 
     <h4><b>Danh sách tin tức</b></h4>
 </div>
 <?php
-while ($row = mysqli_fetch_assoc($kqTin)) {
+   while ($row = mysqli_fetch_assoc($kqTin)) {
 
-?>
-    <div class="row-item row">
-        <div class="col-md-3">
+    ?>
+        <div class="row-item row">
+            <div class="col-md-3">
 
-            <a href="detail.html">
-                <br>
-                <img width="200px" height="200px" class="img-responsive" src="img/tintuc/<?php echo $row["Hinh"]; ?>" alt="">
-            </a>
+                <a href="chitiet.php?id=<?php echo $row["id"] ?>">
+                    <br>
+                    <img width="200px" height="200px" class="img-responsive" src="img/tintuc/<?php echo $row["Hinh"]; ?>" alt="">
+                </a>
+            </div>
+
+            <div class="col-md-9">
+                <h3>
+                    <?php echo $row["TieuDe"]; ?>
+                </h3>
+                <p>
+                    <?php echo $row["TomTat"]; ?>
+                </p>
+                <a class="btn btn-primary" href="chitiet.php?id=<?php echo $row["id"] ?>">Xem thêm <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+
+            <div class="break"></div>
         </div>
-
-        <div class="col-md-9">
-            <h3>
-                <?php echo $row["TieuDe"]; ?>
-            </h3>
-            <p>
-                <?php echo $row["TomTat"]; ?>
-            </p>
-            <a class="btn btn-primary" href="detail.html">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-        </div>
-
-        <div class="break"></div>
-    </div>
-<?php
-}
-?>
+    <?php
+    }
+    ?>
 
 
 <!-- Pagination -->

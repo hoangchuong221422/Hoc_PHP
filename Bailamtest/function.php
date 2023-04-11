@@ -55,7 +55,34 @@ function Get_Tin_Theo_Trang($idLT, $from, $soTrangTin)
 {
     $conn = connect();
     $sql = "SELECT * FROM tintuc WHERE idLoaiTin = $idLT LIMIT $from,$soTrangTin";
-    $kq = mysqli_query($conn, $sql);
-    disconnect($conn);
+    $kq = mysqli_query($conn, $sql);  
+    return $kq;
+}
+
+function Get_Mot_Tin($idtt){
+    $conn = connect();
+    $sql = "SELECT * FROM tintuc WHERE id = $idtt";
+    $kq = mysqli_query($conn, $sql);  
+    return $kq;
+}
+
+function Get_Cac_Tin_LienQuan($idlt){
+    $conn = connect();
+    $sql = "SELECT * FROM tintuc WHERE idLoaiTin = $idlt  LIMIT 0,4";
+    $kq = mysqli_query($conn, $sql);  
+    return $kq;
+}
+
+function Get_Cac_Tin_NoiBat($idlt){
+    $conn = connect();
+    $sql = "SELECT * FROM tintuc WHERE idloaitin=$idlt AND NoiBat=1 LIMIT 0,4";
+    $kq = mysqli_query($conn, $sql);  
+    return $kq;
+}
+
+function Get_BinhLuan_TheoTin($idTinTuc){
+    $conn = connect();
+    $sql = "SELECT *  FROM comment INNER JOIN users ON users.id=comment.idUser where comment.idTinTuc = $idTinTuc";
+    $kq = mysqli_query($conn, $sql);  
     return $kq;
 }
