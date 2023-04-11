@@ -145,12 +145,12 @@ $idtt = $_GET["id"];
                             <!-- item -->
                             <div class="row" style="margin-top: 10px;">
                                 <div class="col-md-5">
-                                    <a href="detail.html">
+                                    <a href="chitiet.php?id=<?php echo $row["id"] ?>">
                                         <img class="img-responsive" src="img/tintuc/<?php echo $row["Hinh"] ?>" alt="">
                                     </a>
                                 </div>
                                 <div class="col-md-7">
-                                    <a href="#"><b><?php echo $row["TieuDe"] ?></b></a>
+                                    <a href="chitiet.php?id=<?php echo $row["id"] ?>"><b><?php echo $row["TieuDe"] ?></b></a>
                                 </div>
                                 <p><?php echo $row["TomTat"] ?></p>
                                 <div class="break"></div>
@@ -176,12 +176,12 @@ $idtt = $_GET["id"];
                             <!-- item -->
                             <div class="row" style="margin-top: 10px;">
                                 <div class="col-md-5">
-                                    <a href="detail.html">
+                                    <a href="chitiet.php?id=<?php echo $row["id"] ?>">
                                         <img class="img-responsive" src="img/tintuc/<?php echo $row["Hinh"] ?>" alt="">
                                     </a>
                                 </div>
                                 <div class="col-md-7">
-                                    <a href="#"><b><?php echo $row["TieuDe"] ?></b></a>
+                                    <a href="chitiet.php?id=<?php echo $row["id"] ?>"><b><?php echo $row["TieuDe"] ?></b></a>
                                 </div>
                                 <p><?php echo $row["TomTat"] ?></p>
                                 <div class="break"></div>
