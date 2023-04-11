@@ -79,7 +79,7 @@ $kqTin = Get_Tin_Theo_Trang($idTL, $from, $soTrangTin); // hàm này sẽ trả 
 
                                 <a href="chitiet.php?id=<?php echo $row["id"] ?>">
                                     <br>
-                                    <img width="200px" height="200px" class="img-responsive" src="img/tintuc/<?php echo $row["Hinh"]; ?>" alt="">
+                                    <img width="400px" height="350px" class="img-responsive" src="img/tintuc/<?php echo $row["Hinh"]; ?>" alt="">
                                 </a>
                             </div>
 
