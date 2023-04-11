@@ -77,7 +77,7 @@ $kqTin = Get_Tin_Theo_Trang($idTL, $from, $soTrangTin); // hàm này sẽ trả 
                         <div class="row-item row">
                             <div class="col-md-3">
 
-                                <a href="detail.html">
+                                <a href="chitiet.php?id=<?php echo $row["id"] ?>">
                                     <br>
                                     <img width="200px" height="200px" class="img-responsive" src="img/tintuc/<?php echo $row["Hinh"]; ?>" alt="">
                                 </a>
@@ -90,7 +90,7 @@ $kqTin = Get_Tin_Theo_Trang($idTL, $from, $soTrangTin); // hàm này sẽ trả 
                                 <p>
                                     <?php echo $row["TomTat"]; ?>
                                 </p>
-                                <a class="btn btn-primary" href="detail.html">Xem thêm <span class="glyphicon glyphicon-chevron-right"></span></a>
+                                <a class="btn btn-primary" href="chitiet.php?id=<?php echo $row["id"] ?>">Xem thêm <span class="glyphicon glyphicon-chevron-right"></span></a>
                             </div>
 
                             <div class="break"></div>

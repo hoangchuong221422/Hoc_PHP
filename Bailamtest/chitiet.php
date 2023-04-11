@@ -60,10 +60,10 @@ $idtt = $_GET["id"];
 
 
                 <!--  Code ở đầu -->
-                <?php $tintuc = Get_Mot_Tin($idtt); 
-                    $kqtt = mysqli_fetch_assoc($tintuc)
-                    
-                
+                <?php $tintuc = Get_Mot_Tin($idtt);
+                $kqtt = mysqli_fetch_assoc($tintuc)
+
+
                 ?>
                 <h1><?php echo  $kqtt["TieuDe"] ?></h1>
 
@@ -81,7 +81,7 @@ $idtt = $_GET["id"];
 
                 <!-- Post Content -->
                 <p class="lead"><?php echo  $kqtt["NoiDung"] ?></p>
-                
+
 
                 <hr>
 
@@ -102,30 +102,30 @@ $idtt = $_GET["id"];
 
                 <!-- Posted Comments -->
                 <?php
-                        $binhluan = Get_BinhLuan_TheoTin($kqtt["id"]);
-                        while($row2 = mysqli_fetch_assoc($binhluan)){
-                            
-                        
-                    ?>
-                <!-- Comment -->
-                <div class="media">
-                    <a class="pull-left" href="#">
-                        <img class="media-object" src="http://placehold.it/64x64" alt="">
-                    </a>
-                    <div class="media-body">
-                        <h4 class="media-heading"><?php echo $row2["name"] ?>
-                            <small>August 25, 2014 at 9:30 PM</small>
-                        </h4>
-                        <?php echo $row["NoiDung"] ?>
-                    </div>
-                </div>
+                $binhluan = Get_BinhLuan_TheoTin($kqtt["id"]);
+                while ($row2 = mysqli_fetch_assoc($binhluan)) {
 
-                <!-- Comment -->
+
+                ?>
+                    <!-- Comment -->
+                    <div class="media">
+                        <a class="pull-left" href="#">
+                            <img class="media-object" src="http://placehold.it/64x64" alt="">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading"><?php echo $row2["name"] ?>
+                                <small>August 25, 2014 at 9:30 PM</small>
+                            </h4>
+                            <?php echo $row2["NoiDung"] ?>
+                        </div>
+                    </div>
+
+                    <!-- Comment -->
                 <?php
-                        }
-                            
-                        
-                    ?>
+                }
+
+
+                ?>
 
             </div>
 
@@ -135,64 +135,64 @@ $idtt = $_GET["id"];
                 <div class="panel panel-default">
                     <div class="panel-heading"><b>Tin liên quan</b></div>
                     <?php
-                        $TinLienQuan = Get_Cac_Tin_LienQuan($kqtt["idLoaiTin"]);
-                        while($row = mysqli_fetch_assoc($TinLienQuan)){
-                            
-                        
-                    ?>
-                    <div class="panel-body">
+                    $TinLienQuan = Get_Cac_Tin_LienQuan($kqtt["idLoaiTin"]);
+                    while ($row = mysqli_fetch_assoc($TinLienQuan)) {
 
-                        <!-- item -->
-                        <div class="row" style="margin-top: 10px;">
-                            <div class="col-md-5">
-                                <a href="detail.html">
-                                    <img class="img-responsive" src="img/tintuc/<?php echo $row["Hinh"] ?>" alt="">
-                                </a>
+
+                    ?>
+                        <div class="panel-body">
+
+                            <!-- item -->
+                            <div class="row" style="margin-top: 10px;">
+                                <div class="col-md-5">
+                                    <a href="detail.html">
+                                        <img class="img-responsive" src="img/tintuc/<?php echo $row["Hinh"] ?>" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-md-7">
+                                    <a href="#"><b><?php echo $row["TieuDe"] ?></b></a>
+                                </div>
+                                <p><?php echo $row["TomTat"] ?></p>
+                                <div class="break"></div>
                             </div>
-                            <div class="col-md-7">
-                                <a href="#"><b><?php echo $row["TieuDe"] ?></b></a>
-                            </div>
-                            <p><?php echo $row["TomTat"] ?></p>
-                            <div class="break"></div>
+                            <!-- end item -->
                         </div>
-                        <!-- end item -->
-                    </div>
-                    <?php                     
-                            
-                        }
+                    <?php
+
+                    }
                     ?>
                 </div>
 
                 <div class="panel panel-default">
                     <div class="panel-heading"><b>Tin nổi bật</b></div>
                     <?php
-                        $TinLienQuanNoiBat = Get_Cac_Tin_NoiBat($kqtt["idLoaiTin"]);
-                        while($row = mysqli_fetch_assoc($TinLienQuanNoiBat)){
-                            
-                        
-                    ?>
-                    <div class="panel-body">
+                    $TinLienQuanNoiBat = Get_Cac_Tin_NoiBat($kqtt["idLoaiTin"]);
+                    while ($row = mysqli_fetch_assoc($TinLienQuanNoiBat)) {
 
-                        <!-- item -->
-                        <div class="row" style="margin-top: 10px;">
-                            <div class="col-md-5">
-                                <a href="detail.html">
-                                    <img class="img-responsive" src="img/tintuc/<?php echo $row["Hinh"] ?>" alt="">
-                                </a>
+
+                    ?>
+                        <div class="panel-body">
+
+                            <!-- item -->
+                            <div class="row" style="margin-top: 10px;">
+                                <div class="col-md-5">
+                                    <a href="detail.html">
+                                        <img class="img-responsive" src="img/tintuc/<?php echo $row["Hinh"] ?>" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-md-7">
+                                    <a href="#"><b><?php echo $row["TieuDe"] ?></b></a>
+                                </div>
+                                <p><?php echo $row["TomTat"] ?></p>
+                                <div class="break"></div>
                             </div>
-                            <div class="col-md-7">
-                                <a href="#"><b><?php echo $row["TieuDe"] ?></b></a>
-                            </div>
-                            <p><?php echo $row["TomTat"] ?></p>
-                            <div class="break"></div>
+                            <!-- end item -->
                         </div>
-                        <!-- end item -->                 
-                    </div>
                     <?php
-                        }
+                    }
                     ?>
                 </div>
-                
+
             </div>
 
         </div>

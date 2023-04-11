@@ -4,8 +4,8 @@ body,html {
 
 /*  trang loại tin */
 .contentAjax .row-item img{
-    height: 150px;
-    width: 150px;
+    height: 350px;
+    width: 350px;
     text-align: center;
     line-height: 150px;
 }
